@@ -18,5 +18,4 @@ install-hooks:
 	pre-commit install -t pre-commit -t commit-msg -t pre-push
 
 migrations-check:
-	python3 manage.py makemigrations --dry-run --check
-
+	python yatinder/manage.py makemigrations --dry-run --check
