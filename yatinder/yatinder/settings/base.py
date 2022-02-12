@@ -20,7 +20,7 @@ from configurations import Configuration
 class Base(Configuration):
 
     # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
     # Quick-start development settings - unsuitable for production
     # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -28,13 +28,9 @@ class Base(Configuration):
     # SECURITY WARNING: keep the secret key used in production secret!
     SECRET_KEY = 'x2w7y5q+@whr12(inl96r-7a4p=nu0w1-34vv8^v#vf2st0g+0'
 
-    # SECURITY WARNING: don't run with debug turned on in production!
-    DEBUG = True
-
     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]', 'testserver']
 
     # Application definition
-
     INSTALLED_APPS = [
         # 'core.apps.CoreConfig',
         # 'posts.apps.PostsConfig',
@@ -80,7 +76,7 @@ class Base(Configuration):
         }
     ]
 
-    WSGI_APPLICATION = 'yatube.wsgi.application'
+    WSGI_APPLICATION = 'yatinder.wsgi.application'
 
     # Database
     # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
