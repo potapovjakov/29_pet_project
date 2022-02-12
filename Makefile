@@ -1,11 +1,14 @@
 style:
-	flake8 .
+	flake8 yatinder
 
 types:
-	mypy .
+	mypy yatinder
 
 test:
 	pytest -q
+
+check:
+	make test style types
 
 lock:
 	pip-compile --generate-hashes --no-emit-index-url

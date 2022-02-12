@@ -28,10 +28,10 @@ pytest-env==0.6.2
 pytest-factoryboy==2.1.0
 pytest-mock==3.6.1
 pytest-network==0.0.1
+pytest-pythonpath==0.7.4
 pytest-randomly==3.10.2
 pre-commit==2.15.0
 requests-mock==1.9.3
 types-python-dateutil==2.8.2
 types-pytz==2021.3.0
 types-requests==2.26.0
-
