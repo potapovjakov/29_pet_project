@@ -3,16 +3,28 @@
 ### Установка
 
 1. Установка утилиты `make`
-1. Настройка вирутального окружения
-1. Установка pip-tools в виртуальном окружении
+   1. Ubuntu
+   ```
+   sudo apt-get install build-essential
+   ```
+   2. MacOS (требуется установленный [Homebrew](https://brew.sh/))
+   ```
+   brew install make
+   ```
+   3. Windows (требуется установленный [Chocolatey](https://chocolatey.org/install))
+   ```
+   choco install make
+   ```
+2. Настройка и активация вирутального окружения
+3. Установка pip-tools в виртуальном окружении
    ```
    pip install pip-tools
    ```
-1. Установка зависимостей
+4. Установка зависимостей
    ```
    make install
    ```
-1. Установка pre-commit хуков
+5. Установка pre-commit хуков
    ```
    make install-hooks
    ```
