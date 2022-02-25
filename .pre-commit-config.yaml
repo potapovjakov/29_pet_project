@@ -2,7 +2,7 @@ default_stages:
 - commit
 
 default_language_version:
-  python: python3.9
+  python: python3.10
 
 exclude: /migrations/
 
