@@ -72,16 +72,16 @@ repos:
     - types-pytz==2021.3.0
     - types-requests==2.25.11
 
-- repo: local
-  hooks:
-  - id: dry-run-makemigrations
-    name: Dry run makemigrations
-    entry: ./.check-migrations.sh
-    language: system
-    types: [ python ]
-    pass_filenames: false
-    stages:
-    - push
+# - repo: local
+#   hooks:
+#   - id: dry-run-makemigrations
+#     name: Dry run makemigrations
+#     entry: ./.check-migrations.sh
+#     language: system
+#     types: [ python ]
+#     pass_filenames: false
+#     stages:
+#     - push
 
 - repo: https://github.com/psf/black
   rev: 21.9b0
